@@ -292,6 +292,7 @@ protected:
   float *Table;
   bool Loaded;
   bool LastLinearInterpolation;
+  double LastRange[2];
 
 private:
   int ComputeTableSize(int functionSize)
