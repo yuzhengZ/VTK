@@ -89,6 +89,11 @@ void vtkVolumeMapper::SetInputData( vtkImageData *input )
   this->SetInputDataInternal(0, input);
 }
 
+void vtkVolumeMapper::SetInputData(int port, vtkImageData *input )
+{
+  this->SetInputDataInternal(port, input);
+}
+
 vtkImageData *vtkVolumeMapper::GetInput()
 {
   if (this->GetNumberOfInputConnections(0) < 1)

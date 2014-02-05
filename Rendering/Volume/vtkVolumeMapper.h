@@ -49,6 +49,7 @@ public:
   // Description:
   // Set/Get the input data
   virtual void SetInputData( vtkImageData * );
+  virtual void SetInputData( int port, vtkImageData * );
   virtual void SetInputData( vtkDataSet * );
   vtkImageData *GetInput();
 
